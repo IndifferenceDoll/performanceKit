@@ -1,6 +1,6 @@
 # 使用说明
 ## npm 安装
-npm install performance-kit --save
+npm install performance-kits --save
 ## 方法说明
 需要在浏览器环境下
 
@@ -8,7 +8,7 @@ npm install performance-kit --save
 
 需要支持performance，且支持performance timeline level2 规范
 
-import performancekit from 'performance-kit';
+import performancekit from 'performance-kits';
 
 const { onloadPerformance, switchPerformance, closePerformance } = performancekit;
 
@@ -28,7 +28,7 @@ closePerformance用于离开组件/关闭项目时使用，需要开发者在监
 ## 项目中使用
 index.js下：
 
-import performancekit from 'performance-kit';
+import performancekit from 'performance-kits';
 
 const { onloadPerformance } = performancekit;
 
