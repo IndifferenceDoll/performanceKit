@@ -34,4 +34,4 @@ onloadPerformance().then((obj) => {
 
 打印结果：
 
-![log](asset/log.jpg)
+![log](https://github.com/IndifferenceDoll/performanceKit/raw/master/asset/log.jpg)
