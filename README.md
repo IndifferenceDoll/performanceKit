@@ -44,3 +44,6 @@ onloadPerformance().then((obj) => {
 
 ## PS
 如果监测中出现负值和意外的不准确的结果，可能意味着在页面加载结束前进行了结果的获取，请调大总轮询时间，重新监测。
+onloadPerformance默认总轮询时间5000ms
+switchPerformance默认总轮询时间1000ms
+closePerformance默认总轮询时间0ms
