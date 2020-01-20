@@ -2,6 +2,10 @@
 ## npm 安装
 npm install performancekit --save
 ## 方法说明
+需要在浏览器环境下
+需要支持promise
+需要支持performance，且支持performance timeline level2 规范
+
 import performancekit from 'performancekit';
 
 const { onloadPerformance, switchPerformance, closePerformance } = performancekit;
