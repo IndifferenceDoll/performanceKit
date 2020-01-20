@@ -34,4 +34,4 @@ onloadPerformance().then((obj) => {
 
 打印结果：
 
-![log](/performancekit/asset/log.jpg)
+![log](asset/log.jpg)
