@@ -1,5 +1,5 @@
 {
-  "name": "performancekit",
+  "name": "performance-kit",
   "version": "1.0.0",
   "description": "web/h5 performance monitoring",
   "main": "index.js",
