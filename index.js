@@ -167,3 +167,7 @@ export default (function(){const ONLOAD = 'ONLOAD';
         onloadPerformance,
     }
 })();
+// TODO:
+// 增加node服务端的performance监控=》需自动检测环境
+// 转换为类写法
+// 代码压缩
