@@ -113,18 +113,19 @@ export default (function(){const ONLOAD = 'ONLOAD';
 
     //监测性能核心代码
     const performanceCore = (res = () => {}, everyPollingTime = 100, pollingTime = 1000, type = '') => {
-        const exceptPaintInfo = getExceptPaintInfo();
         const currTime = window.performance.now();
         const polling = setInterval(() => {
             const everyTime = window.performance.now();
             const paintEntryArr = window.performance.getEntriesByType('paint');
             if(paintEntryArr.length > 0){
                 clearInterval(polling);
+                const exceptPaintInfo = getExceptPaintInfo();
                 const paintInfo = getPaintInfo();
                 const includePaintInfoObj = Object.assign({}, exceptPaintInfo, paintInfo, { msg:'包含paint相关信息!', type })
                 res(includePaintInfoObj);
             } else if(everyTime - currTime > pollingTime){
                 clearInterval(polling);
+                const exceptPaintInfo = getExceptPaintInfo();
                 const expectPaintInfoObj = Object.assign({}, exceptPaintInfo, { msg:'未包含paint相关信息(总轮询时间太短或不支持paint类型entry)!', type })
                 res(expectPaintInfoObj);
             }
