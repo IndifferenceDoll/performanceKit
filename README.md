@@ -40,7 +40,7 @@ onloadPerformance().then((obj) => {
 
 打印结果：
 
-![log](https://github.com/IndifferenceDoll/performanceKit/raw/master/asset/log.jpg)
+![log](https://github.com/IndifferenceDoll/performanceKit/raw/master/asset/logs.jpg)
 
 ## PS
 如果监测中出现负值和意外的不准确的结果，可能意味着在页面加载结束前进行了结果的获取，请调大总轮询时间，重新监测。
