@@ -3,6 +3,8 @@
 前端基础性能监控
 
 通用的性能监控只能是较简单的基础监控，很多更深入复杂的性能监控，需要针对特定的环境、场景配合页面设计、曝光等条件去定制化设计api，并在合适的地方调用。
+
+例如采集Speed Index、Perceptual Speed Index、视觉完整时间(Visually Complete)、首次有效渲染时长(First Meaningful Paint)等指标。
 ## npm 安装
 npm install performance-kits --save
 ## 方法说明
